@@ -1,14 +1,14 @@
 # MySQL-Webpage
 Display MySQL Data on Webpage
 <?php
-$con=mysqli_connect("localhost","root","","rds");
+$con=mysqli_connect("localhost","root","","[database name]");
 // Check connection
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM rds.data");
+$result = mysqli_query($con,"SELECT * FROM [table name]");
 
 echo "<table border='1'>
 <tr>
